@@ -36,6 +36,43 @@ export const Chart = () => {
                 data={state.charData}
                 
                 options={{
+                    title:{
+                        display:true,
+                        text: 'Largest Population are effected covid 19',
+                        fontSize: 25
+                    },
+                    legend:{
+                        display: true,
+                        position: 'right'
+                    }
+                }} />
+            <Line
+                data={state.charData}
+                
+                options={{
+                    title:{
+                        display:true,
+                        text: 'Largest Population are effected covid 19',
+                        fontSize: 25
+                    },
+                    legend:{
+                        display: true,
+                        position: 'right'
+                    }
+                }} />
+            <Pie
+                data={state.charData}
+                
+                options={{
+                    title:{
+                        display:true,
+                        text: 'Largest Population are effected covid 19',
+                        fontSize: 25
+                    },
+                    legend:{
+                        display: true,
+                        position: 'right'
+                    }
                 }} />
 
         </div>
