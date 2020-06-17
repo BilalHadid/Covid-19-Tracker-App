@@ -43,7 +43,7 @@ export const Chart = () => {
                     },
                     legend:{
                         display: true,
-                        position: 'right'
+                        position: 'bottom'
                     }
                 }} />
             <Line
