@@ -1,6 +1,7 @@
 import React,{Component} from 'react'
 import axios from 'axios'
 import {Card} from '../component/card/card'
+import {Chart} from '../component/chart'
 
 class Api extends Component{
     state ={
@@ -25,6 +26,7 @@ class Api extends Component{
         return(
             <div>
                 <Card finalize = {this.state.global} currentDate = {this.state.currentDate}/>
+                <Chart finalize = {this.state.global}/>
             </div>
         )
     }

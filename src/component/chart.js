@@ -1,20 +1,20 @@
 import React from 'react'
-import {Bar, Line, Pie} from 'react-chartjs-2'
+import {Pie} from 'react-chartjs-2'
 
-export const Chart = () => {
+export const Chart = ({finalize}) => {
     const state = {
         charData:{
-            labels:['Bilal','hadid','Fajruddin','Qasim','usama','suhaib'],
+            labels:['New Confirmed','New Death','New recovered','Total Confirmed','Total Deaths','Total Recovered'],
             datasets:[
                 {
                     label: 'Population',
                     data:[
-                        617594,
-                        184145,
-                        389256,
-                        867523,
-                        124586,
-                        856758
+                        finalize.NewConfirmed,
+                        finalize.NewDeaths,
+                        finalize.NewRecovered,
+                        finalize.TotalConfirmed,
+                        finalize.TotalDeaths,
+                        finalize.TotalRecovered
 
                     ],
                     backgroundColor:[
@@ -32,7 +32,7 @@ export const Chart = () => {
     }
     return(
         <div className="chart">
-            <Bar
+            {/* <Bar
                 data={state.charData}
                 
                 options={{
@@ -59,7 +59,7 @@ export const Chart = () => {
                         display: true,
                         position: 'right'
                     }
-                }} />
+                }} /> */}
             <Pie
                 data={state.charData}
                 
