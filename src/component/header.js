@@ -1,38 +1,35 @@
 import React from 'react'
+import { makeStyles } from '@material-ui/core/styles'
 import {
     AppBar,
     Toolbar,
-    ListItem,
-    IconButton,
-    ListItemText,
     Avatar,
-    Divider,
-    List,
     Typography,
     Box
 } from "@material-ui/core"
-import {
-    ArrowBack,
-    AssignmentInd,
-    Home,
-    Apps,
-    ContactMail
-} from "@material-ui/icons"
+
 import avator from '../images/tenor.gif'
 
+const useStyles = makeStyles({
+    menuContainer:{
+        color: 'white',
+        align: 'center',
+        display: 'center'
+        
+    }
+})
 
 
 export const Header = () => {
+    const classes = useStyles();
     return(
         <Box component= "nav">
             <AppBar >
-                <Toolbar>
-                    <IconButton>
-                        <ArrowBack/>
-                    </IconButton>
-                    <Typography variant="h5" align="right">Covid 19 </Typography>
-                    <Typography  >{new Date().toDateString()}</Typography>
-                    <Avatar src ={avator} alt="Rusel"/>
+                <Toolbar >
+                    
+                    <Avatar src ={avator} alt="Rusel" className={classes.menuContainer}/>
+                    <Typography variant="h5"  className={classes.menuContainer}>Covid 19 </Typography>
+                    
                 </Toolbar>
             </AppBar>
 
