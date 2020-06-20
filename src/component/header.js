@@ -18,6 +18,7 @@ import {
     Apps,
     ContactMail
 } from "@material-ui/icons"
+import avator from '../images/tenor.gif'
 
 
 
@@ -29,8 +30,9 @@ export const Header = () => {
                     <IconButton>
                         <ArrowBack/>
                     </IconButton>
-                    <Typography variant="h5">Covid 19 </Typography>
-                    <Typography variant="h6" style={{textAlign:"center"}}>{new Date().toDateString()}</Typography>
+                    <Typography variant="h5" align="right">Covid 19 </Typography>
+                    <Typography  >{new Date().toDateString()}</Typography>
+                    <Avatar src ={avator} alt="Rusel"/>
                 </Toolbar>
             </AppBar>
 
