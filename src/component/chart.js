@@ -1,5 +1,5 @@
 import React from 'react'
-import {Pie} from 'react-chartjs-2'
+import {Pie,Line} from 'react-chartjs-2'
 
 export const Chart = ({finalize}) => {
     const state = {
@@ -45,7 +45,7 @@ export const Chart = ({finalize}) => {
                         display: true,
                         position: 'bottom'
                     }
-                }} />
+                }} /> */}
             <Line
                 data={state.charData}
                 
@@ -59,7 +59,7 @@ export const Chart = ({finalize}) => {
                         display: true,
                         position: 'right'
                     }
-                }} /> */}
+                }} />
             <Pie
                 data={state.charData}
                 
