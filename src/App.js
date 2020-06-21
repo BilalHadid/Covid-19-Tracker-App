@@ -1,25 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Fragment } from 'react';
 import './App.css';
+import {Header} from './component/Header'
+import {Chart} from './component/Chart'
+import { Cards } from './component/card'
 
 function App() {
   return (
+    <Fragment>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+     
     </div>
+     <div>
+       <h2>COVID 19 Tracker</h2>
+     <Cards/>
+     <Chart/>
+     </div>
+     </Fragment>
   );
 }
 
