@@ -4,6 +4,7 @@ import {Header} from './component/Header'
 import {Chart} from './component/Chart'
 import { Cards } from './component/card'
 import {Update} from './component/newUpdate'
+import {Map} from './component/liveMap'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
      <h2 className="Updates">New Updates</h2>
      <Update/>
      </div>
+     <Map/>
      </Fragment>
   );
 }

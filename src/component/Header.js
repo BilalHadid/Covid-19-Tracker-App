@@ -20,8 +20,8 @@ const useStyles = makeStyles({
         backgroundAttachment: 'unset',
     },
     main: {
-        background: '#D9FFFF0D',
-
+        // background: '#D9FFFF0D',
+        background: '#0E0037',
         
         backgroundAttachment: 'initial',
     },
