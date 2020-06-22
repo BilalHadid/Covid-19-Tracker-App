@@ -3,6 +3,7 @@ import './App.css';
 import {Header} from './component/Header'
 import {Chart} from './component/Chart'
 import { Cards } from './component/card'
+import {Update} from './component/newUpdate'
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
        <h2>COVID 19 Tracker</h2>
      <Cards/>
      <Chart/>
+     <h2 className="Updates">New Updates</h2>
+     <Update/>
      </div>
      </Fragment>
   );
